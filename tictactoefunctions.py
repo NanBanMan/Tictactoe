@@ -3,31 +3,6 @@ def print_board(actual_board_state):
     
     print(f"{actual_board_state[0]}|{actual_board_state[1]}|{actual_board_state[2]}\n-----\n{actual_board_state[3]}|{actual_board_state[4]}|{actual_board_state[5]}\n-----\n{actual_board_state[6]}|{actual_board_state[7]}|{actual_board_state[8]}")
 
-'''def check_win(abs, mark):
-
-    #check for winning move
-
-    
-    if (abs[1] == mark and abs[2] == mark) or (abs[3] == mark and abs[6] ==mark) or (abs[4] == mark and abs[8] == mark):
-        return 0
-    if (abs[0] == mark and abs[2] == mark) or (abs[4] == mark and abs[7] == mark):
-        return 1
-    if (abs[0] == mark and abs[1] == mark) or (abs[5] == mark and abs[5] ==mark) or (abs[4] == mark and abs[6] == mark):
-        return 2    
-    if (abs[4] == mark and abs[5] == mark) or (abs[0] == mark and abs[6] == mark):
-        return 3
-    if (abs[3] == mark and abs[5] == mark) or (abs[1] == mark and abs[7] ==mark) or (abs[0] == mark and abs[8] == mark) or (abs[2] == mark and abs[6] == mark):
-        return 4
-    if (abs[3] == mark and abs[4] == mark) or (abs[2] == mark and abs[8] == mark):
-        return 5    
-    if (abs[7] == mark and abs[8] == mark) or (abs[0] == mark and abs[3] ==mark) or (abs[2] == mark and abs[4] == mark):
-        return 6
-    if (abs[6] == mark and abs[8] == mark) or (abs[1] == mark and abs[4] == mark):
-        return 7
-    if (abs[6] == mark and abs[7] == mark) or (abs[0] == mark and abs[4] ==mark) or (abs[2] == mark and abs[5] == mark):
-        return 8
-    else:
-        return False'''
     
 
 def check_player_win(abs, mark):
@@ -52,9 +27,7 @@ def check_player_win(abs, mark):
         return False
 
 
-
-
-    
+  
 
 def assess_moves(actual_board_state, turn_player_mark, opponent_mark, player_turn, path_score, square_ref):
 

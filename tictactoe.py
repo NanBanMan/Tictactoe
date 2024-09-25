@@ -9,7 +9,7 @@ print("Hi! Let's play Tic Tac Toe!")
 player_mark = input("Would you like to be X or O?").upper()
 
 while player_mark not in ['X', 'x', 'O', 'o']:
-    player_mark = input("I'm sorry, please choose X or O:")
+    player_mark = input("I'm sorry, please choose X or O:").upper()
 
 if player_mark == 'O':
     computer_mark = 'X'
